@@ -1,0 +1,6 @@
+{
+  "token": "Jds@12345", 
+  "filename": {{(upload_Aadhaar_Front.files.length > 0 ? upload_Aadhaar_Front.files[0].name : "")}},
+  "mimetype": {{(upload_Aadhaar_Front.files.length > 0 ? upload_Aadhaar_Front.files[0].type : "")}},
+  "filedata": {{(upload_Aadhaar_Front.files.length > 0 ? upload_Aadhaar_Front.files[0].data : "")}}
+}

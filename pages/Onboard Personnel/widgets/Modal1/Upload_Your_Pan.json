@@ -1,0 +1,48 @@
+{
+  "allowedFileTypes": [],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 74,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "27ol9iohml",
+  "label": "Upload Pan Card",
+  "leftColumn": 1,
+  "maxFileSize": 5,
+  "maxNumFiles": "1",
+  "minWidth": 120,
+  "mobileBottomRow": 59,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 55,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 5.7734375,
+  "parentId": "937piv3399",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 46,
+  "selectedFiles": [],
+  "topRow": 70,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "63dykxjzbx",
+  "widgetName": "Upload_Your_Pan"
+}

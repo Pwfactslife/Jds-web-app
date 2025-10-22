@@ -1,0 +1,6 @@
+{
+  "token": "Jds@12345", 
+  "filename": {{(Upload_Your_Pan.files.length > 0 ? Upload_Your_Pan.files[0].name : "")}},
+  "mimetype": {{(Upload_Your_Pan.files.length > 0 ? Upload_Your_Pan.files[0].type : "")}},
+  "filedata": {{(Upload_Your_Pan.files.length > 0 ? Upload_Your_Pan.files[0].data : "")}}
+}

@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 85,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "pq15mthst3",
+  "labelAlignment": "left",
+  "labelPosition": "Auto",
+  "labelText": "Select Role",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 60,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 53,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "label",
+  "originalBottomRow": 66,
+  "originalTopRow": 59,
+  "parentColumnSpace": 5.7734375,
+  "parentId": "937piv3399",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 47,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  { \"label\": \"Guard\", \"value\": \"Guard\" },\n  { \"label\": \"Supervisor\", \"value\": \"Supervisor\" },\n  { \"label\": \"Field\", \"value\": \"Field\" },\n  { \"label\": \"Admin\", \"value\": \"Admin\" }\n]",
+  "topRow": 78,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "swrvc4ul09",
+  "widgetName": "Select_Role"
+}

@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 93,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "pq15mthst3",
+  "labelAlignment": "left",
+  "labelPosition": "Auto",
+  "labelText": "Assign Unit",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 63,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 56,
+  "needsErrorInfo": false,
+  "optionLabel": "Unit_FullName",
+  "optionValue": "Unit_Code",
+  "parentColumnSpace": 5.7734375,
+  "parentId": "937piv3399",
+  "parentRowSpace": 10,
+  "placeholderText": "Select Unit",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 47,
+  "serverSideFiltering": false,
+  "sourceData": "{{get_All_Units.data}}",
+  "topRow": 85,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "7f88492mcq",
+  "widgetName": "Assign_Unit"
+}

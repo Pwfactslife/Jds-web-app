@@ -1,0 +1,6 @@
+{
+  "token": "Jds@12345", 
+  "filename": {{(Others_File.files.length > 0 ? Others_File.files[0].name : "")}},
+  "mimetype": {{(Others_File.files.length > 0 ? Others_File.files[0].type : "")}},
+  "filedata": {{(Others_File.files.length > 0 ? Others_File.files[0].data : "")}}
+}

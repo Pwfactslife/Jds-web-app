@@ -1,5 +1,8 @@
 {
   "appIsExample": false,
+  "appLayout": {
+    "type": "DESKTOP"
+  },
   "applicationDetail": {
     "appPositioning": {
       "type": "FIXED"
@@ -18,10 +21,17 @@
   "icon": "car",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Manage Units",
       "isDefault": true
+    },
+    {
+      "id": "Onboard Personnel",
+      "isDefault": false
     }
   ],
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
   "unpublishedApplicationDetail": {
     "appPositioning": {
       "type": "FIXED"

@@ -51,7 +51,7 @@
   "placeholderText": "Select Unit",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 47,
+  "rightColumn": 59,
   "serverSideFiltering": false,
   "sourceData": "{{get_All_Units.data}}",
   "topRow": 85,

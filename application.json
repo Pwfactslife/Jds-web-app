@@ -1,7 +1,7 @@
 {
   "appIsExample": false,
   "appLayout": {
-    "type": "DESKTOP"
+    "type": "MOBILE"
   },
   "applicationDetail": {
     "appPositioning": {
@@ -22,15 +22,23 @@
   "pages": [
     {
       "id": "Manage Units",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Onboard Personnel",
       "isDefault": false
+    },
+    {
+      "id": "LoginPage",
+      "isDefault": true
+    },
+    {
+      "id": "Dashboard",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "MOBILE"
   },
   "unpublishedApplicationDetail": {
     "appPositioning": {

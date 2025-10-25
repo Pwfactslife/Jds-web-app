@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 29,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3nyrun84q9",
+  "leftColumn": 18,
+  "minWidth": 120,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 25,
+  "needsErrorInfo": false,
+  "onClick": "{{(async () => {\n  try {\n    // Run the query to check email and password\n    const userResult = await check_User.run();\n\n    // Check if the query returned any data (i.e., if a user was found)\n    if (userResult && userResult.length > 0) {\n      // User found, login successful\n      const userData = userResult[0]; // Get the first (and only) user found\n\n      // Store user details in Appsmith's store\n      await storeValue('userRole', userData.Role);\n      await storeValue('userArea', userData.Assigned_Area);\n      await storeValue('userUnit', userData.Assigned_Unit);\n\n      // Navigate to the Dashboard page\n      navigateTo('Dashboard'); // Make sure you have a page named 'Dashboard'\n\n    } else {\n      // No user found with that email/password combination\n      showAlert('Invalid Email or Password!', 'error');\n    }\n  } catch (error) {\n    // Handle any errors during the query execution\n    console.error(\"Login failed:\", error); // Log the error for debugging\n    showAlert('Login failed. Please try again.', 'error');\n  }\n})();}}",
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 34,
+  "text": "Login",
+  "topRow": 25,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "hn60e6pq6c",
+  "widgetName": "Button_Login"
+}

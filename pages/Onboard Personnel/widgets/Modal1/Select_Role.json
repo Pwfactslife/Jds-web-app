@@ -50,7 +50,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 47,
+  "rightColumn": 59,
   "serverSideFiltering": false,
   "sourceData": "[\n  { \"label\": \"Guard\", \"value\": \"Guard\" },\n  { \"label\": \"Supervisor\", \"value\": \"Supervisor\" },\n  { \"label\": \"Field\", \"value\": \"Field\" },\n  { \"label\": \"Admin\", \"value\": \"Admin\" }\n]",
   "topRow": 78,

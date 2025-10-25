@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68f285cc5dc15a4fb128d19f_435346d0-c6c1-46f1-89fa-0fdf1e715996",
-  "id": "Onboard Personnel_Add_Personnel",
+  "gitSyncId": "68f285cc5dc15a4fb128d19f_dd79c40b-b027-47fc-8649-5a366b37885e",
+  "id": "Dashboard_get_Supervisor_Roster",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "INSERT_ONE"
+          "data": "FETCH_MANY"
         },
         "entityType": {
           "data": "ROWS"
@@ -28,11 +28,8 @@
         "range": {
           "data": ""
         },
-        "rowObjects": {
-          "data": "{{this.params}}"
-        },
         "sheetName": {
-          "data": "Personnel"
+          "data": "Roster"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1NzWyx91Jn4S2h85wK1y0ZRDVgxP5ri821ZhzcLhfXaw/edit"
@@ -55,7 +52,14 @@
           "data": {
             "children": [
               {
-                "condition": "LT"
+                "condition": "EQ",
+                "key": "Assigned_Unit_Code",
+                "value": "{{appsmith.store.userUnit}}"
+              },
+              {
+                "condition": "EQ",
+                "key": "Duty_Date",
+                "value": "{{moment().format(\"DD-MM-YYYY\")}}"
               }
             ],
             "condition": "AND"
@@ -74,12 +78,15 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.rowObjects.data"
+        "key": "formData.where.data.children[1].value"
+      },
+      {
+        "key": "formData.where.data.children[0].value"
       }
     ],
-    "name": "Add_Personnel",
-    "pageId": "Onboard Personnel",
-    "runBehaviour": "MANUAL",
+    "name": "get_Supervisor_Roster",
+    "pageId": "Dashboard",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

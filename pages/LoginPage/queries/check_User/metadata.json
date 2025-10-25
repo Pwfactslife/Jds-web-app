@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68f285cc5dc15a4fb128d19f_435346d0-c6c1-46f1-89fa-0fdf1e715996",
-  "id": "Onboard Personnel_Add_Personnel",
+  "gitSyncId": "68f285cc5dc15a4fb128d19f_f58481d7-cb30-4af2-bf2b-cdb6c48061e6",
+  "id": "LoginPage_check_User",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "INSERT_ONE"
+          "data": "FETCH_MANY"
         },
         "entityType": {
           "data": "ROWS"
@@ -28,11 +28,8 @@
         "range": {
           "data": ""
         },
-        "rowObjects": {
-          "data": "{{this.params}}"
-        },
         "sheetName": {
-          "data": "Personnel"
+          "data": "Users"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1NzWyx91Jn4S2h85wK1y0ZRDVgxP5ri821ZhzcLhfXaw/edit"
@@ -72,13 +69,9 @@
       "name": "Jds App Database",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.rowObjects.data"
-      }
-    ],
-    "name": "Add_Personnel",
-    "pageId": "Onboard Personnel",
+    "dynamicBindingPathList": [],
+    "name": "check_User",
+    "pageId": "LoginPage",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

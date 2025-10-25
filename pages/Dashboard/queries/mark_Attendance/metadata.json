@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68f285cc5dc15a4fb128d19f_435346d0-c6c1-46f1-89fa-0fdf1e715996",
-  "id": "Onboard Personnel_Add_Personnel",
+  "gitSyncId": "68f285cc5dc15a4fb128d19f_5e46185f-428d-416a-bac9-714329b7a556",
+  "id": "Dashboard_mark_Attendance",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "INSERT_ONE"
+          "data": "UPDATE_ONE"
         },
         "entityType": {
           "data": "ROWS"
@@ -29,10 +29,10 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{this.params}}"
+          "data": "{\n  \"rowIndex\": \"{{Table1.triggeredRowIndex + 1}}\",\n  \"Attendance_Status\": \"{{Table1.triggeredButtonColumn.label === 'Present' ? 'P' : 'A'}}\"\n}"
         },
         "sheetName": {
-          "data": "Personnel"
+          "data": "Roster"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1NzWyx91Jn4S2h85wK1y0ZRDVgxP5ri821ZhzcLhfXaw/edit"
@@ -40,24 +40,11 @@
         "smartSubstitution": {
           "data": true
         },
-        "sortBy": {
-          "data": [
-            {
-              "column": "",
-              "order": "Ascending"
-            }
-          ]
-        },
         "tableHeaderIndex": {
           "data": "1"
         },
         "where": {
           "data": {
-            "children": [
-              {
-                "condition": "LT"
-              }
-            ],
             "condition": "AND"
           }
         }
@@ -77,8 +64,8 @@
         "key": "formData.rowObjects.data"
       }
     ],
-    "name": "Add_Personnel",
-    "pageId": "Onboard Personnel",
+    "name": "mark_Attendance",
+    "pageId": "Dashboard",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

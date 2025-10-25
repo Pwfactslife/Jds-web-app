@@ -13,11 +13,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onFilesSelected"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "dynamicTyping": true,
   "fileDataType": "Base64",
   "files": [],
@@ -26,28 +22,27 @@
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
-  "key": "27ol9iohml",
+  "key": "j5tpkmxc6d",
   "label": "Upload Photo",
   "leftColumn": 1,
   "maxFileSize": 5,
   "maxNumFiles": 1,
   "minWidth": 120,
-  "mobileBottomRow": 31,
-  "mobileLeftColumn": 2,
-  "mobileRightColumn": 18,
-  "mobileTopRow": 27,
+  "mobileBottomRow": 44,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 40,
   "needsErrorInfo": false,
-  "onFilesSelected": "",
-  "parentColumnSpace": 6.4921875,
+  "parentColumnSpace": 5.7734375,
   "parentId": "937piv3399",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 45,
+  "rightColumn": 57,
   "selectedFiles": [],
   "topRow": 40,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "i2nt7bf2bc",
+  "widgetId": "lv6yrf424e",
   "widgetName": "Upload_Photo"
 }

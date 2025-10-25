@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 49,
+  "bottomRow": 65,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -43,16 +43,17 @@
     "Area",
     "Status",
     "rowIndex",
-    "Profile_Photo1",
-    "Aadhar_Photo1",
     "Pan_Number1",
-    "Pan_Photo1",
     "Primary_Unit_Code1",
-    "Other_Documents1",
     "Date_Of_Joining1",
-    "Date_Of_Leaving1"
+    "Date_Of_Leaving1",
+    "Profile_Photo_URL",
+    "Aadhar_Photo_URL",
+    "Aadhar_Back_URL",
+    "Pan_Photo_URL",
+    "Other_Documents_URL"
   ],
-  "columnUpdatedAt": 1761120166820,
+  "columnUpdatedAt": 1761297860599,
   "columnWidthMap": {},
   "compactMode": "SHORT",
   "customIsLoading": false,
@@ -107,31 +108,34 @@
       "key": "primaryColumns.Secondary_Mobile_Number1.computedValue"
     },
     {
-      "key": "primaryColumns.Profile_Photo1.computedValue"
-    },
-    {
       "key": "primaryColumns.Aadhar_Number1.computedValue"
-    },
-    {
-      "key": "primaryColumns.Aadhar_Photo1.computedValue"
     },
     {
       "key": "primaryColumns.Pan_Number1.computedValue"
     },
     {
-      "key": "primaryColumns.Pan_Photo1.computedValue"
-    },
-    {
       "key": "primaryColumns.Primary_Unit_Code1.computedValue"
-    },
-    {
-      "key": "primaryColumns.Other_Documents1.computedValue"
     },
     {
       "key": "primaryColumns.Date_Of_Joining1.computedValue"
     },
     {
       "key": "primaryColumns.Date_Of_Leaving1.computedValue"
+    },
+    {
+      "key": "primaryColumns.Profile_Photo_URL.computedValue"
+    },
+    {
+      "key": "primaryColumns.Aadhar_Photo_URL.computedValue"
+    },
+    {
+      "key": "primaryColumns.Aadhar_Back_URL.computedValue"
+    },
+    {
+      "key": "primaryColumns.Pan_Photo_URL.computedValue"
+    },
+    {
+      "key": "primaryColumns.Other_Documents_URL.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -166,6 +170,40 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "Aadhar_Back_URL": {
+      "alias": "Aadhar_Back_URL",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Aadhar_Back_URL\"])) : Aadhar_Back_URL })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "Aadhar_Back_URL",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Aadhar_Back_URL",
+      "notation": "standard",
+      "originalId": "Aadhar_Back_URL",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "Aadhar_Number1": {
       "alias": "Aadhar_Number",
       "allowCellWrapping": false,
@@ -198,20 +236,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "Aadhar_Photo1": {
-      "alias": "Aadhar_Photo",
+    "Aadhar_Photo_URL": {
+      "alias": "Aadhar_Photo_URL",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Aadhar_Photo\"])) : Aadhar_Photo })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Aadhar_Photo_URL\"])) : Aadhar_Photo_URL })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "Aadhar_Photo1",
-      "index": 12,
+      "id": "Aadhar_Photo_URL",
+      "index": 8,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -220,10 +259,11 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Aadhar_Photo",
+      "label": "Aadhar_Photo_URL",
       "notation": "standard",
-      "originalId": "Aadhar_Photo",
+      "originalId": "Aadhar_Photo_URL",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -456,20 +496,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "Other_Documents1": {
-      "alias": "Other_Documents",
+    "Other_Documents_URL": {
+      "alias": "Other_Documents_URL",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Other_Documents\"])) : Other_Documents })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Other_Documents_URL\"])) : Other_Documents_URL })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "Other_Documents1",
-      "index": 16,
+      "id": "Other_Documents_URL",
+      "index": 15,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -478,10 +519,11 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Other_Documents",
+      "label": "Other_Documents_URL",
       "notation": "standard",
-      "originalId": "Other_Documents",
+      "originalId": "Other_Documents_URL",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -520,20 +562,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "Pan_Photo1": {
-      "alias": "Pan_Photo",
+    "Pan_Photo_URL": {
+      "alias": "Pan_Photo_URL",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Pan_Photo\"])) : Pan_Photo })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Pan_Photo_URL\"])) : Pan_Photo_URL })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "Pan_Photo1",
-      "index": 14,
+      "id": "Pan_Photo_URL",
+      "index": 11,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -542,10 +585,11 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Pan_Photo",
+      "label": "Pan_Photo_URL",
       "notation": "standard",
-      "originalId": "Pan_Photo",
+      "originalId": "Pan_Photo_URL",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -616,20 +660,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "Profile_Photo1": {
-      "alias": "Profile_Photo",
+    "Profile_Photo_URL": {
+      "alias": "Profile_Photo_URL",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Profile_Photo\"])) : Profile_Photo })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Profile_Photo_URL\"])) : Profile_Photo_URL })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "Profile_Photo1",
-      "index": 10,
+      "id": "Profile_Photo_URL",
+      "index": 6,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -638,10 +683,11 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Profile_Photo",
+      "label": "Profile_Photo_URL",
       "notation": "standard",
-      "originalId": "Profile_Photo",
+      "originalId": "Profile_Photo_URL",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -779,7 +825,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
+  "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": false,
   "tableData": "{{Find_Personnel1.data}}",

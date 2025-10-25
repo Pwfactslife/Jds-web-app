@@ -52,7 +52,14 @@
           "data": {
             "children": [
               {
-                "condition": "LT"
+                "condition": "EQ",
+                "key": "Email",
+                "value": "{{Input_Email.text}}"
+              },
+              {
+                "condition": "EQ",
+                "key": "Password",
+                "value": "{{Input_Password.text}}"
               }
             ],
             "condition": "AND"
@@ -69,7 +76,14 @@
       "name": "Jds App Database",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.where.data.children[0].value"
+      },
+      {
+        "key": "formData.where.data.children[1].value"
+      }
+    ],
     "name": "check_User",
     "pageId": "LoginPage",
     "runBehaviour": "MANUAL",
